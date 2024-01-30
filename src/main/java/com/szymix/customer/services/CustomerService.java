@@ -1,6 +1,10 @@
-package com.szymix.customer;
+package com.szymix.customer.services;
 
 import com.sun.jdi.request.DuplicateRequestException;
+import com.szymix.customer.dao.CustomerDao;
+import com.szymix.customer.dtos.CustomerRegistrationRequest;
+import com.szymix.customer.dtos.CustomerUpdateRequest;
+import com.szymix.customer.models.Customer;
 import com.szymix.exceptions.RequestValidationException;
 import com.szymix.exceptions.ResourceDuplicateException;
 import com.szymix.exceptions.ResourceNotFoundException;
@@ -9,7 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-import static com.szymix.customer.CustomerMapper.mapRegistrationRequestToCustomer;
+import static com.szymix.customer.mappers.CustomerMapper.mapRegistrationRequestToCustomer;
 
 @Service
 public class CustomerService {

@@ -1,5 +1,7 @@
-package com.szymix.customer;
+package com.szymix.customer.dao;
 
+import com.szymix.customer.repositories.CustomerRepository;
+import com.szymix.customer.models.Customer;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

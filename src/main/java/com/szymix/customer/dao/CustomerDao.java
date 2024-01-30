@@ -1,4 +1,6 @@
-package com.szymix.customer;
+package com.szymix.customer.dao;
+
+import com.szymix.customer.models.Customer;
 
 import java.util.List;
 import java.util.Optional;

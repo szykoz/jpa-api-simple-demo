@@ -1,5 +1,6 @@
-package com.szymix.customer;
+package com.szymix.customer.dao;
 
+import com.szymix.customer.models.Customer;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -32,6 +33,11 @@ public class CustomerDummyDataAccessService implements CustomerDao {
 
     @Override
     public void insertCustomer(Customer customer) {
+        Long maxId = customers.stream()
+                .map(Customer::getId)
+                .max(Long::compareTo)
+                .orElse(1L);
+        customer.setId(++maxId);
         customers.add(customer);
     }
 
@@ -54,6 +60,5 @@ public class CustomerDummyDataAccessService implements CustomerDao {
     public void updateCustomer(Customer update) {
         customers.removeIf(c -> c.getId().equals(update.getId()));
         customers.add(update);
-
     }
 }

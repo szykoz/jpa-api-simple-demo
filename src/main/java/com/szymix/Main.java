@@ -1,7 +1,7 @@
 package com.szymix;
 
-import com.szymix.customer.Customer;
-import com.szymix.customer.CustomerRepository;
+import com.szymix.customer.models.Customer;
+import com.szymix.customer.repositories.CustomerRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

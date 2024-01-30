@@ -1,5 +1,9 @@
-package com.szymix.customer;
+package com.szymix.customer.controllers;
 
+import com.szymix.customer.dtos.CustomerRegistrationRequest;
+import com.szymix.customer.dtos.CustomerUpdateRequest;
+import com.szymix.customer.models.Customer;
+import com.szymix.customer.services.CustomerService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

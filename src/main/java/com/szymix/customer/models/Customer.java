@@ -1,4 +1,4 @@
-package com.szymix.customer;
+package com.szymix.customer.models;
 
 import jakarta.persistence.*;
 
